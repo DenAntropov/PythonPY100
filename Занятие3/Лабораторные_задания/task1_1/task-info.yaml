@@ -4,14 +4,14 @@ files:
   visible: true
   placeholders:
   - offset: 132
-    length: 72
+    length: 0
     placeholder_text: '# TODO  найти количество чисел сумма квадратов, которых не
       превышает 500'
     initial_state:
       length: 72
       offset: 132
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |-
       while True:
