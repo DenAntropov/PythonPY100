@@ -1,7 +1,12 @@
 def digit_sum(num: int) -> bool:
-    ...  # TODO не забыть проерить, что число дожно быть четырехзначное
+    if len(str(num)) != 4:
+        raise NameError("Число не четырехзначное!")
+    list_ = [int(i) for i in str(num)]
 
-    ...  # TODO проверить кратность суммы цифр
+    if sum(list_) % 7 == 0:
+        return True
+    else:
+        return False
 
 
 if __name__ == "__main__":
