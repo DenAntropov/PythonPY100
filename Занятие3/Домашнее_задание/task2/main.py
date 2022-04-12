@@ -1,5 +1,12 @@
 def check_string(str_):
-    ...  # TODO проверить что в строку входят только символы 1 и 0
+    if not str_:
+        return False
+
+    base = set("01")
+    for d in set(str_):
+        if d not in base:
+            return False
+    return True
 
 
 if __name__ == "__main__":
