@@ -1,5 +1,6 @@
 def task(num: int) -> bool:
-    ...  # TODO какая есть отличительная особенность, при повторяющихся числах
+    list_digits = [int(digit) for digit in str(num)]
+    return False if len(set(list_digits)) == len(list_digits) else True
 
 
 if __name__ == "__main__":

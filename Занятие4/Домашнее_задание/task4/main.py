@@ -1,7 +1,9 @@
 def is_lucky_number(num: int) -> bool:
-    ...  # TODO проверить что число шестизначное
+    if len(str(num)) != 6:
+        raise ValueError("Число не шестизначное :(")
 
-    ...  # TODO проверить счастливое число или нет
+    list_digits = [int(digit) for digit in str(num)]
+    return True if sum(list_digits[:3]) == sum(list_digits[3:]) else False
 
 
 if __name__ == "__main__":
